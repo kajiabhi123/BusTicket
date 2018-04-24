@@ -84,6 +84,7 @@ public class Login extends AppCompatActivity {
                         startActivity(intent);
 
                     }
+                    //this is test.
                     else if(decision.equals("false"))
                     {
                         Toast.makeText(Login.this, message, Toast.LENGTH_SHORT).show();
