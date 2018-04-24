@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.busticket.busticket.TicketLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/origin"
+        android:layout_marginLeft="20dp"
+        android:hint="ORIGIN"
+        android:textColorHint="#445"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/to"
+        android:hint="TO"
+        android:layout_marginLeft="65dp"
+        android:textColorHint="#445"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/destinationView"
+        android:hint="DESTINATION"
+        android:layout_marginLeft="60dp"
+        android:textColorHint="#445"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/middlepanel"
+        android:layout_below="@+id/topPanel"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/bus_icon2"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:columnCount="2"
+        android:rowCount="7"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/middlepanel"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUS No:"/>
+        <TextView
+            android:id="@+id/bus_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger Name:"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Bus Type:"/>
+        <TextView
+            android:id="@+id/bus_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination:"/>
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="No of Seats:"/>
+        <TextView
+            android:id="@+id/no_of_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Total Ammount" />
+        <TextView
+            android:id="@+id/total_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+            />
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Issued Date"/>
+        <TextView
+            android:id="@+id/Idate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ticket Date"/>
+        <TextView
+            android:id="@+id/Tdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:paddingTop="15dp"
+            android:text="Time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <TextView
+            android:id="@+id/Ttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+</GridLayout>
+
+</RelativeLayout>

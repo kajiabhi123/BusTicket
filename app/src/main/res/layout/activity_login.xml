@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FF35455F"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:layout_marginTop="100dp"
+    android:padding="20dp"
+    tools:context="com.example.busticket.busticket.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="150sp"
+          android:src="@mipmap/bus_icon1" />
+
+    <EditText
+        android:id="@+id/email"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/login1"
+        android:background="@drawable/btn_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Login"
+
+        />
+  </LinearLayout>
+</RelativeLayout>

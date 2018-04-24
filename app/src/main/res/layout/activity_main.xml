@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF35455F"
+    tools:context="com.example.busticket.busticket.MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/normal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="NORMAL"
+        android:onClick="signUp"
+        android:textStyle="bold"
+        android:background="@drawable/btn_selector"
+      />
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector"
+        android:id="@+id/deluxe"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="DELUXE"
+        android:onClick="signUp"
+        android:textStyle="bold"
+            />
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector"
+        android:id="@+id/ac"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="A/C"
+        android:onClick="signUp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

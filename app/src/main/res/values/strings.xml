@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BusTicket</string>
+
+    <string-array name="from">
+        <item>FROM</item>
+        <item>Kathmandu</item>
+        <item>Dhangadhi</item>
+    </string-array>
+    <string-array name="to">
+        <item>TO</item>
+        <item>Kathmandu</item>
+        <item>Dhangadhi</item>
+    </string-array>
+    <string name="title_activity_book_seat">BookSeatActivity</string>
+
+</resources>
